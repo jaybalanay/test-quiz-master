@@ -16,3 +16,4 @@ App.module "Questions", (Questions) ->
     clickEdit: (e) ->
       e.preventDefault()
       App.navigate "questions/#{@model.id}/edit"
+      window.location.reload()

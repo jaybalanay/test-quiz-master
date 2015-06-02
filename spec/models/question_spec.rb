@@ -1,6 +1,17 @@
 require 'rails_helper'
 
 describe Question, :type => :model do
+  describe 'validations' do
+    it 'creates a valid question' do
+      expect(create(:question)).to be_valid
+    end
+
+    it 'validates field presence' do
+      expect(validate_presence_of(:question))
+      expect(validate_presence_of(:answer))
+    end
+  end
+
   describe 'is_correct?' do
     it 'requires the correct answer' do
       expect(Question.new(answer: "Paris").is_correct?("London")).to be false

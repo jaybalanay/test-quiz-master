@@ -11,6 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'spring', group: :development
 gem 'haml-rails'
 
+gem 'bootsy'
+gem 'numbers_and_words'
+
 # Client-side libraries
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.4'
@@ -27,6 +30,8 @@ group :development, :test do
   gem 'sinon-chai-rails'
   gem 'sinon-rails'
   gem 'chai-jquery-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 
   # Better console
   gem 'pry'

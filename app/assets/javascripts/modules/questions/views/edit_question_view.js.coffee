@@ -5,7 +5,7 @@ App.module "Questions", (Questions) ->
 
     ui:
       alert: '.alert'
-      question: 'input[name=question]'
+      question: 'textarea[name=question]'
       answer: 'input[name=answer]'
 
     events:

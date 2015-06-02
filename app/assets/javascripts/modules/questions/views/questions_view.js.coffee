@@ -13,3 +13,4 @@ App.module "Questions", (Questions) ->
     new: (e) ->
       e.preventDefault()
       App.navigate "questions/new"
+      window.location.reload()
